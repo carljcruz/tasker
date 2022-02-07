@@ -1,0 +1,7 @@
+{% for task in tasks %}
+<tr>
+  <td>{{ task.title }}</td>
+  <td>{{ task.content }}</td>
+  <td><a href="{% url 'tag_list' task.tags %]">{{ task.tags }}</a></td>
+</tr>
+{% endfor %}
